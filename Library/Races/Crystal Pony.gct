@@ -1,0 +1,1265 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "270628bf-d3a8-4854-80d5-597b609e5c2f",
+	"traits": [
+		{
+			"id": "2086b839-4526-48c5-a895-0fc50d710307",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "4360cd10-c067-4ed9-b7da-0139bcbba3b1",
+					"type": "trait",
+					"name": "Hard to Kill",
+					"reference": "B58",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 2,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to HT rolls made for survival at -HP or below, and on any HT roll where failure means instant death. If this bonus makes the difference between success and failure, you collapse, apparently dead (or disabled), but come to in the usual amount of time. A successful Diagnosis roll reveals the truth.",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "a5629f6a-6986-45da-b4a5-5e3f1c9b1379",
+					"type": "trait",
+					"name": "Hard to Subdue",
+					"reference": "B59",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 2,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to any HT roll to avoid unconsciousness",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "3fc786fa-4779-4e4d-91eb-0e5c9dfbe1ad",
+					"type": "trait",
+					"name": "Increased Strength",
+					"reference": "B14",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "fc2b398f-467b-4c36-857b-98087975f0c4",
+							"type": "modifier",
+							"name": "No Fine Manipulators",
+							"reference": "B15",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "89e24b12-233b-4ad9-a77a-934e7bc640f7",
+							"type": "modifier",
+							"name": "Size",
+							"reference": "B15",
+							"cost": -10,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "4f3a7bdb-ed81-4735-87e8-d9eaeb4856c7",
+							"type": "modifier",
+							"name": "Super-Effort",
+							"reference": "SU24",
+							"cost": 300,
+							"disabled": true
+						}
+					],
+					"levels": 1,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "st",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "c0484a59-6e25-4d30-9405-f0c26556cd28",
+					"type": "trait",
+					"name": "Increased Health",
+					"reference": "B14",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "ht",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "ccc2a603-5a04-4b23-affb-bed82de71ddb",
+					"type": "trait",
+					"name": "Lifting ST",
+					"reference": "B65,P58",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "cdcc6dd9-be46-44b2-9b2d-9258972a9abb",
+							"type": "modifier",
+							"name": "No Fine Manipulators",
+							"reference": "B15",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "3a979126-6b53-4293-825a-fd4679b99bdf",
+							"type": "modifier",
+							"name": "Size",
+							"reference": "B15",
+							"cost": -10,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "4dee3f9c-cdb5-41b9-9bd9-417234971df0",
+							"type": "modifier",
+							"name": "Super-Effort",
+							"reference": "P58",
+							"cost": 400,
+							"disabled": true
+						},
+						{
+							"id": "5beca2a9-73aa-4acc-a809-a69d38a0c31c",
+							"type": "modifier",
+							"name": "Know Your Own Strength Variant Price",
+							"reference": "PY83:18",
+							"cost": 4,
+							"affects": "levels_only",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "e2c9f797-e7e2-4d31-a059-9af1330cfb7c",
+							"type": "modifier",
+							"name": "@Limb@ Grip ST",
+							"reference": "MATG28",
+							"cost": -70,
+							"disabled": true
+						},
+						{
+							"id": "4a7c2b00-d7ab-4ea6-84a8-1d223584ade1",
+							"type": "modifier",
+							"name": "Bite ST",
+							"reference": "MATG28",
+							"cost": -70,
+							"disabled": true
+						}
+					],
+					"levels": 3,
+					"points_per_level": 3,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"limitation": "lifting_only",
+							"attribute": "st",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"calc": {
+						"points": 9
+					}
+				},
+				{
+					"id": "34727e5a-e6b0-4964-bbdd-b0194586e81f",
+					"type": "trait",
+					"name": "Appearance",
+					"reference": "B21",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "db88e777-c246-49aa-87cc-8c1dbfef8cd0",
+							"type": "modifier",
+							"name": "Attractive",
+							"reference": "B21",
+							"cost": 4,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 1
+								}
+							]
+						},
+						{
+							"id": "2fda71e1-13b5-4bed-8188-83946dbbb13b",
+							"type": "modifier",
+							"name": "Average",
+							"reference": "B21",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "59011a6b-7cd8-4a59-8a7b-af75aa057843",
+							"type": "modifier",
+							"name": "Beautiful",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else",
+									"amount": 4
+								}
+							]
+						},
+						{
+							"id": "f2ef3d46-2535-466f-b85d-82d3a9a59937",
+							"type": "modifier",
+							"name": "Beautiful (Androgynous)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							]
+						},
+						{
+							"id": "260c9611-0aad-407d-a8f2-cdeab7f8e022",
+							"type": "modifier",
+							"name": "Beautiful (Impressive)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							]
+						},
+						{
+							"id": "1d6d3fc1-a874-42ee-a40a-ab72d7d653ff",
+							"type": "modifier",
+							"name": "Handsome",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else",
+									"amount": 4
+								}
+							]
+						},
+						{
+							"id": "66b67232-40a9-49ce-a30c-a41aa79a86e8",
+							"type": "modifier",
+							"name": "Handsome (Androgynous)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							]
+						},
+						{
+							"id": "5c3f10f5-fb42-44a7-9953-ce727ebc4c89",
+							"type": "modifier",
+							"name": "Handsome (Impressive)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							]
+						},
+						{
+							"id": "cfef51b4-8526-47be-bb28-49c4e7db46b5",
+							"type": "modifier",
+							"name": "Hideous",
+							"reference": "B21",
+							"cost": -16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -4
+								}
+							]
+						},
+						{
+							"id": "67eda3d3-3b02-4324-b86a-cad4432e2092",
+							"type": "modifier",
+							"name": "Horrific",
+							"reference": "B21",
+							"cost": -24,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -6
+								}
+							]
+						},
+						{
+							"id": "1d0d263d-39e6-4b05-96c9-bcab7c73917a",
+							"type": "modifier",
+							"name": "Impressive",
+							"reference": "B21",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "ea5ee8d3-92de-44f7-b869-97bbcb0a0446",
+							"type": "modifier",
+							"name": "Monstrous",
+							"reference": "B21",
+							"cost": -20,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -5
+								}
+							]
+						},
+						{
+							"id": "bcec029e-a194-48dd-a4f3-d79852417ff1",
+							"type": "modifier",
+							"name": "Off-the-Shelf Looks",
+							"reference": "B21",
+							"notes": "Halves the usual reaction bonus - adjust manually",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "4e3e372b-d8bb-41c3-a675-1c37f39c0a06",
+							"type": "modifier",
+							"name": "Transcendent",
+							"reference": "B21",
+							"cost": 20,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+									"amount": 8
+								}
+							]
+						},
+						{
+							"id": "2bb71c80-552e-499d-a4e6-e57f26881a8c",
+							"type": "modifier",
+							"name": "Transcendent (Androgynous)",
+							"reference": "B21",
+							"cost": 20,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 5
+								}
+							]
+						},
+						{
+							"id": "ddf25679-e521-4ac2-b914-5b31d097cc09",
+							"type": "modifier",
+							"name": "Transcendent (Impressive)",
+							"reference": "B21",
+							"cost": 20,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 5
+								}
+							]
+						},
+						{
+							"id": "52c66ff0-cb7b-4bd8-8d77-4e6f78fa6ce4",
+							"type": "modifier",
+							"name": "Ugly",
+							"reference": "B21",
+							"cost": -8,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -2
+								}
+							]
+						},
+						{
+							"id": "f2ade180-af68-4cdb-91c2-2b6062b625b5",
+							"type": "modifier",
+							"name": "Unattractive",
+							"reference": "B21",
+							"cost": -4,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -1
+								}
+							]
+						},
+						{
+							"id": "585340a8-301a-451e-918c-89fac91595d4",
+							"type": "modifier",
+							"name": "Universal",
+							"reference": "B21",
+							"cost": 25
+						},
+						{
+							"id": "e1bcea51-b24b-4e72-a625-be62b9161aaf",
+							"type": "modifier",
+							"name": "Very Beautiful",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+									"amount": 6
+								}
+							]
+						},
+						{
+							"id": "45fe1d7c-54ed-4171-ac37-0c14d3825e89",
+							"type": "modifier",
+							"name": "Very Beautiful (Androgynous)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							]
+						},
+						{
+							"id": "211f4936-94c1-4043-862b-d73a066832ac",
+							"type": "modifier",
+							"name": "Very Beautiful (Impressive)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							]
+						},
+						{
+							"id": "8c0bc9b1-f818-427e-838e-9cb3f1125587",
+							"type": "modifier",
+							"name": "Very Handsome",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+									"amount": 6
+								}
+							]
+						},
+						{
+							"id": "1cf4494d-453a-403d-890b-7233286080e7",
+							"type": "modifier",
+							"name": "Very Handsome (Androgynous)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							]
+						},
+						{
+							"id": "19314e0f-05c4-4488-adf0-ba1785d46b23",
+							"type": "modifier",
+							"name": "Very Handsome (Impressive)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							]
+						}
+					],
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "08f2159f-545c-4bf7-a1a0-16275e3b3296",
+					"type": "trait",
+					"name": "Temperature Tolerance",
+					"reference": "B93",
+					"notes": "-45°F - 70°F / -42°C - 21°C",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 4,
+					"points_per_level": 1,
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "60184324-2b81-412b-85ed-ffeb69506f0c",
+					"type": "trait",
+					"name": "Magic Resistance",
+					"reference": "B67",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "3a0752cf-b3da-4558-bbb7-86f9cd70056b",
+							"type": "modifier",
+							"name": "Improved",
+							"reference": "B67",
+							"cost": 150,
+							"disabled": true
+						}
+					],
+					"levels": 2,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to resist spells",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to skill for others to cast a spell on you",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "2755a7b8-f42b-46db-82d4-7483344873be",
+					"type": "trait_container",
+					"children": [
+						{
+							"id": "a9cb2542-d589-4f8a-b461-29da7c72aed1",
+							"type": "trait",
+							"name": "Increased Basic Move (Ground)",
+							"reference": "B17",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"levels": 2,
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "basic_move",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "25c0f44f-1c5e-4c4b-ae3f-411d2fabbb02",
+							"type": "trait",
+							"name": "Talent (small)",
+							"reference": "B89",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Talent"
+							],
+							"modifiers": [
+								{
+									"id": "c8718c48-14ce-4561-89f5-c332feb2f83e",
+									"type": "modifier",
+									"name": "Alternate Benefit",
+									"notes": "@Alternate Benefit@",
+									"disabled": true
+								},
+								{
+									"id": "0c6a154f-275a-4ddc-acd9-04967d7b5b81",
+									"type": "modifier",
+									"name": "Alternative Cost",
+									"affects": "levels_only",
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"levels": 2,
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "reaction_bonus",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "924e8877-8f1a-4115-b1e3-4861ca8345b2",
+							"type": "trait",
+							"name": "Temperature Tolerance",
+							"reference": "B93",
+							"notes": "-5°F - 70°F / -20°C - 21°C",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"levels": 2,
+							"points_per_level": 1,
+							"calc": {
+								"points": 2
+							}
+						},
+						{
+							"id": "a05a53ed-da54-48cc-a1a3-97e264498493",
+							"type": "trait",
+							"name": "Hooves",
+							"reference": "B42",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"base_points": 3,
+							"weapons": [
+								{
+									"id": "eb864411-9fa2-4b7e-ac2f-867fa25b7be2",
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cr",
+										"st": "thr",
+										"modifier_per_die": 1
+									},
+									"usage": "Trample",
+									"reach": "C,1",
+									"parry": "No",
+									"block": "No",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Brawling",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Karate",
+											"modifier": -2
+										}
+									],
+									"calc": {
+										"parry": "No",
+										"block": "No",
+										"damage": "thr (+1 per die) cr"
+									}
+								}
+							],
+							"features": [
+								{
+									"type": "dr_bonus",
+									"location": "foot",
+									"amount": 1
+								}
+							],
+							"calc": {
+								"points": 3
+							}
+						},
+						{
+							"id": "776483b5-5739-4a99-837a-a855c6aa4d96",
+							"type": "trait",
+							"name": "Extra Arm (mouth)",
+							"reference": "B53",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "13198544-febf-4ae9-b33d-f0417afaa8ad",
+									"type": "modifier",
+									"name": "Extra-Flexible",
+									"reference": "B53",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "70739720-74b2-4e87-af50-d32c92418aa5",
+									"type": "modifier",
+									"name": "Long",
+									"reference": "B53",
+									"cost": 100,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "9933554a-070a-46be-9ab5-a1dd60a06c7b",
+									"type": "modifier",
+									"name": "Foot Manipulators",
+									"reference": "B53",
+									"cost": -30,
+									"disabled": true
+								},
+								{
+									"id": "ef88aab6-d563-4340-8b3e-c0fefd64af62",
+									"type": "modifier",
+									"name": "No Physical Attack",
+									"reference": "B53",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "4a771fbc-91c8-45df-8300-0e1319aa352a",
+									"type": "modifier",
+									"name": "Short",
+									"reference": "B53",
+									"cost": -50
+								},
+								{
+									"id": "dc2c7bf6-b170-41f2-8666-5bab7bcbf3ab",
+									"type": "modifier",
+									"name": "Weak",
+									"reference": "B53",
+									"notes": "Half body ST",
+									"cost": -25
+								},
+								{
+									"id": "5e09b98e-fc5e-45fa-adc5-2991f8945c5d",
+									"type": "modifier",
+									"name": "Weak",
+									"reference": "B53",
+									"notes": "Quarter body ST",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "ab130779-4e57-4341-9ae8-ad464f1605d5",
+									"type": "modifier",
+									"name": "Weapon Mount",
+									"reference": "B53",
+									"cost": -80,
+									"disabled": true
+								},
+								{
+									"id": "b30344f6-89d0-49e2-b9de-b09aada3b545",
+									"type": "modifier",
+									"name": "No Grasping Hand",
+									"reference": "MATG28",
+									"cost": -40,
+									"disabled": true
+								}
+							],
+							"levels": 1,
+							"points_per_level": 10,
+							"calc": {
+								"points": 3
+							}
+						},
+						{
+							"id": "bf7279ca-db4b-4db0-8a45-1ab2eaed2776",
+							"type": "trait",
+							"name": "Fur",
+							"reference": "B101",
+							"tags": [
+								"Exotic",
+								"Perk",
+								"Physical"
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "9ce5c1c4-0fed-4288-b44c-239740bde9d9",
+							"type": "trait",
+							"name": "Horizontal",
+							"reference": "B139",
+							"tags": [
+								"Disadvantage",
+								"Exotic",
+								"Physical"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "a2fb6911-5313-4d27-9942-5864f1880df9",
+							"type": "trait",
+							"name": "Extra Arm (Hooves)",
+							"reference": "B53",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "bbdae4b5-e384-41b9-a638-1fe6140eb7ad",
+									"type": "modifier",
+									"name": "Extra-Flexible",
+									"reference": "B53",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "45377004-cd2f-4f93-85ed-b9718ed38f32",
+									"type": "modifier",
+									"name": "Long",
+									"reference": "B53",
+									"cost": 100,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "876532ab-69e6-4d98-b33a-5ccd91201d1b",
+									"type": "modifier",
+									"name": "Foot Manipulators",
+									"reference": "B53",
+									"cost": -30
+								},
+								{
+									"id": "8b33e458-90b8-40b2-8f73-e3d4fa547436",
+									"type": "modifier",
+									"name": "No Physical Attack",
+									"reference": "B53",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "d69d90d5-65f6-4315-bb5e-5de74181ac70",
+									"type": "modifier",
+									"name": "Short",
+									"reference": "B53",
+									"cost": -50
+								},
+								{
+									"id": "d6fda8f5-1c50-4b9a-bfc8-c08fec321c08",
+									"type": "modifier",
+									"name": "Weak",
+									"reference": "B53",
+									"notes": "Half body ST",
+									"cost": -25,
+									"disabled": true
+								},
+								{
+									"id": "511beec0-33a2-4851-abbe-fa22f8254f99",
+									"type": "modifier",
+									"name": "Weak",
+									"reference": "B53",
+									"notes": "Quarter body ST",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "b14b81c2-c364-41b0-81c5-e2ee38fbaac8",
+									"type": "modifier",
+									"name": "Weapon Mount",
+									"reference": "B53",
+									"cost": -80,
+									"disabled": true
+								},
+								{
+									"id": "2ef10269-5e30-4500-8b60-ff4f0fc72d7f",
+									"type": "modifier",
+									"name": "No Grasping Hand",
+									"reference": "MATG28",
+									"cost": -40,
+									"disabled": true
+								}
+							],
+							"levels": 2,
+							"points_per_level": 10,
+							"calc": {
+								"points": 4
+							}
+						},
+						{
+							"id": "30e07ba6-6418-4874-99ae-69623366f8ed",
+							"type": "trait",
+							"name": "Ham-Fisted",
+							"reference": "B138",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"levels": 4,
+							"points_per_level": -5,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "high manual dexterity"
+										}
+									}
+								]
+							},
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "contains",
+										"qualifier": "artist"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "jeweler"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "knot-tying"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "leatherworking"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "lockpicking"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "pickpocket"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "sewing"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "sleight of hand"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "surgery"
+									},
+									"amount": -3
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "machinist"
+									},
+									"amount": -3
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "contains",
+										"qualifier": "mechanic"
+									},
+									"amount": -3
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "contains",
+										"qualifier": "fast-draw"
+									},
+									"amount": -3
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from others where being tidy or well-groomed would matter",
+									"amount": -1,
+									"per_level": true
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "to any Influence roll where being tidy or well-groomed would matter",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"calc": {
+								"points": -20
+							}
+						},
+						{
+							"id": "8349df61-f7a7-4102-a2c1-80ce82f96502",
+							"type": "trait",
+							"name": "Distinctive Features",
+							"reference": "B165",
+							"tags": [
+								"Physical",
+								"Quirk"
+							],
+							"base_points": -1,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "disguise"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "shadowing"
+									},
+									"amount": -1
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "to others’ attempts to identify or follow you",
+									"amount": 1
+								}
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"name": "Base Pony",
+					"calc": {
+						"points": 2
+					}
+				}
+			],
+			"name": "Crystal Pony",
+			"calc": {
+				"points": 62
+			}
+		}
+	]
+}

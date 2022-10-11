@@ -1,0 +1,1033 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "d21a8af8-866f-46f7-8baa-e08f6dd1d333",
+	"traits": [
+		{
+			"id": "ab717d05-7e6e-4e58-8174-dcb7a90d2727",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "f1979f71-3c84-47ec-9034-4f0d4509f986",
+					"type": "trait",
+					"name": "Extra Arm",
+					"reference": "B53",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "35a92f02-eaae-43f0-bef8-315c9ec89571",
+							"type": "modifier",
+							"name": "Extra-Flexible",
+							"reference": "B53",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "09fc9c5d-e4e5-41cf-8a11-63f10134d5d6",
+							"type": "modifier",
+							"name": "Long",
+							"reference": "B53",
+							"cost": 100,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "e738e6c0-2ca6-4078-a8f4-fd5d2315e787",
+							"type": "modifier",
+							"name": "Foot Manipulators",
+							"reference": "B53",
+							"cost": -30,
+							"disabled": true
+						},
+						{
+							"id": "d2f2d6ba-0ef2-4c9e-b8ea-94367e76295e",
+							"type": "modifier",
+							"name": "No Physical Attack",
+							"reference": "B53",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "3476a5af-6694-4f45-bb68-f765ffb05fff",
+							"type": "modifier",
+							"name": "Short",
+							"reference": "B53",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "05274e73-ce77-46b3-afcb-661f727551bf",
+							"type": "modifier",
+							"name": "Weak",
+							"reference": "B53",
+							"notes": "Half body ST",
+							"cost": -25,
+							"disabled": true
+						},
+						{
+							"id": "a31b2de4-efcd-4c52-9833-30453a9e69ba",
+							"type": "modifier",
+							"name": "Weak",
+							"reference": "B53",
+							"notes": "Quarter body ST",
+							"cost": -50
+						},
+						{
+							"id": "5624a05d-67b7-4ae7-9b07-477905f92dbe",
+							"type": "modifier",
+							"name": "Weapon Mount",
+							"reference": "B53",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "f4c71d95-26bd-4f09-b078-7bcb48b03403",
+							"type": "modifier",
+							"name": "No Grasping Hand",
+							"reference": "MATG28",
+							"cost": -40,
+							"disabled": true
+						}
+					],
+					"levels": 2,
+					"points_per_level": 10,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "c1c6f247-8ee3-4510-85c3-4d4c53354601",
+					"type": "trait",
+					"name": "Flight",
+					"reference": "B56,P50,PSI14",
+					"notes": "Air Move is Basic Speed x 2 (drop all fractions)",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "7bee61f8-bb1e-41b8-b7b9-fcb91a1f80c7",
+							"type": "modifier",
+							"name": "Newtonian Space Flight",
+							"reference": "B56",
+							"cost": 25,
+							"disabled": true
+						},
+						{
+							"id": "d5ef7ce0-dca5-4952-9dc8-55909a09e197",
+							"type": "modifier",
+							"name": "Space Flight",
+							"reference": "B56",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "13335067-e21d-441a-a2de-523a7e16c81b",
+							"type": "modifier",
+							"name": "Cannot Hover",
+							"reference": "B56",
+							"cost": -15,
+							"disabled": true
+						},
+						{
+							"id": "4d4fd54b-6a39-497b-864f-4cfec64744e2",
+							"type": "modifier",
+							"name": "Controlled Gliding",
+							"reference": "B56",
+							"cost": -45,
+							"disabled": true
+						},
+						{
+							"id": "1b410b08-52ad-4f63-9b24-f920baa6d564",
+							"type": "modifier",
+							"name": "Gliding",
+							"reference": "B56",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "ffd1da59-3ec9-49d9-afaa-c0741e4846b4",
+							"type": "modifier",
+							"name": "Lighter Than Air",
+							"reference": "B56",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "283eca44-5ba0-4ff9-82b8-cf1269d8699b",
+							"type": "modifier",
+							"name": "Low Ceiling",
+							"reference": "B56",
+							"notes": "30'",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "f3ed000b-5171-411e-b8b4-309857e3e5de",
+							"type": "modifier",
+							"name": "Low Ceiling",
+							"reference": "B56",
+							"notes": "10'",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "e80c1994-c239-4b11-872f-73ee8fc3bd50",
+							"type": "modifier",
+							"name": "Low Ceiling",
+							"reference": "B56",
+							"notes": "5'",
+							"cost": -25,
+							"disabled": true
+						},
+						{
+							"id": "7363d1fe-f0b8-4206-8084-ea0f512101e4",
+							"type": "modifier",
+							"name": "Small Wings",
+							"reference": "B56",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "b88d6711-eef4-43ec-ae62-1641c5746216",
+							"type": "modifier",
+							"name": "Space Flight Only",
+							"reference": "B56",
+							"cost": -75,
+							"disabled": true
+						},
+						{
+							"id": "12fc372b-f9d8-4914-b5ac-a453f5af913d",
+							"type": "modifier",
+							"name": "Winged",
+							"reference": "B56",
+							"cost": -25
+						},
+						{
+							"id": "269fe6bf-f256-49b1-a164-eece8fb77052",
+							"type": "modifier",
+							"name": "Planetary",
+							"reference": "P50",
+							"cost": -5,
+							"disabled": true
+						},
+						{
+							"id": "c57bc668-2c9f-47fd-97b3-ff05ef6a200d",
+							"type": "modifier",
+							"name": "Requires Surface",
+							"reference": "P50",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "271df0b0-b345-46b4-a03a-62a143ef78b1",
+							"type": "modifier",
+							"name": "Slow",
+							"reference": "PSI14",
+							"notes": "Basic Speed",
+							"cost": -25,
+							"disabled": true
+						},
+						{
+							"id": "5175a278-7ff2-4e51-9a4c-da1debabb296",
+							"type": "modifier",
+							"name": "Slow, Move 1",
+							"reference": "PSI14",
+							"cost": -45,
+							"disabled": true
+						}
+					],
+					"base_points": 40,
+					"calc": {
+						"points": 30
+					}
+				},
+				{
+					"id": "beb73459-9558-400e-9464-69055b2ea279",
+					"type": "trait",
+					"name": "Silence",
+					"reference": "B85,P76",
+					"notes": "Bonuses help only when hearing is the only sense that can be used to detect you.",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "99bd8785-c892-44e3-b3d9-02039b03d4e4",
+							"type": "modifier",
+							"name": "Dynamic",
+							"reference": "P76",
+							"cost": 40,
+							"disabled": true
+						}
+					],
+					"levels": 2,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to Stealth when you are perfectly motionless",
+							"amount": 2,
+							"per_level": true
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to Stealth if moving (even in armor, etc.)",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "7b943251-d59e-44d0-a7a6-d6953a71f5ae",
+					"type": "trait",
+					"name": "Night Vision",
+					"reference": "B71,P87",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 5,
+					"points_per_level": 1,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "d767b3ca-9da3-4d6e-8f57-73f38e9fbe03",
+					"type": "trait",
+					"name": "Walk On Air",
+					"reference": "B97,P87",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "43f3a8a8-19da-4485-8496-93526d57d75b",
+							"type": "modifier",
+							"name": "Specific",
+							"reference": "P87",
+							"notes": "Clouds",
+							"cost": -40
+						},
+						{
+							"id": "12d934a6-5295-4755-a00c-6f8ee30919a5",
+							"type": "modifier",
+							"name": "Lighter than Air",
+							"reference": "P87",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "95ac9b87-80d3-4991-9793-ada2234b1737",
+							"type": "modifier",
+							"name": "Maximum Height",
+							"reference": "P87",
+							"notes": "30 ft",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "b65842f5-c53a-445d-ad4f-ee859d98f1f2",
+							"type": "modifier",
+							"name": "Maximum Height",
+							"reference": "P87",
+							"notes": "10 ft",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "ef4cc965-e628-4c9e-a765-5314fd50125e",
+							"type": "modifier",
+							"name": "Maximum Height",
+							"reference": "P87",
+							"notes": "5 ft",
+							"cost": -25,
+							"disabled": true
+						},
+						{
+							"id": "916ffc9d-613b-42b1-ba5b-fc88f749aad7",
+							"type": "modifier",
+							"name": "Vertical Only",
+							"reference": "P87",
+							"cost": -25,
+							"disabled": true
+						}
+					],
+					"base_points": 20,
+					"calc": {
+						"points": 12
+					}
+				},
+				{
+					"id": "a33721ba-072c-45ac-aff3-c5ababed2d1c",
+					"type": "trait",
+					"name": "Temperature Tolerance (-55°F - 70°C)",
+					"reference": "B93",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 5,
+					"points_per_level": 1,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "c40b8c7d-b77e-4af4-a15d-7bef38796e23",
+					"type": "trait",
+					"name": "Decreased Strength",
+					"reference": "B14",
+					"tags": [
+						"Attribute",
+						"Disadvantage",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": -10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "st",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "23aaefd3-929b-4240-9d19-898de70991a2",
+					"type": "trait_container",
+					"children": [
+						{
+							"id": "779b5dc0-94d5-47a7-93b5-2583d3b0c334",
+							"type": "trait",
+							"name": "Increased Basic Move (Ground)",
+							"reference": "B17",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"levels": 2,
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "basic_move",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "6693ad4a-03e1-4a3d-a68a-ae7560dff206",
+							"type": "trait",
+							"name": "Talent (small)",
+							"reference": "B89",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Talent"
+							],
+							"modifiers": [
+								{
+									"id": "c8718c48-14ce-4561-89f5-c332feb2f83e",
+									"type": "modifier",
+									"name": "Alternate Benefit",
+									"notes": "@Alternate Benefit@",
+									"disabled": true
+								},
+								{
+									"id": "0c6a154f-275a-4ddc-acd9-04967d7b5b81",
+									"type": "modifier",
+									"name": "Alternative Cost",
+									"affects": "levels_only",
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"levels": 2,
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "reaction_bonus",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "3c797e27-b81a-4441-b004-aa0bf9c48b05",
+							"type": "trait",
+							"name": "Temperature Tolerance",
+							"reference": "B93",
+							"notes": "-5°F - 70°F / -20°C - 21°C",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"levels": 2,
+							"points_per_level": 1,
+							"calc": {
+								"points": 2
+							}
+						},
+						{
+							"id": "be157904-25bc-444e-adf7-8a68169247bb",
+							"type": "trait",
+							"name": "Hooves",
+							"reference": "B42",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"base_points": 3,
+							"weapons": [
+								{
+									"id": "eb864411-9fa2-4b7e-ac2f-867fa25b7be2",
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cr",
+										"st": "thr",
+										"modifier_per_die": 1
+									},
+									"usage": "Trample",
+									"reach": "C,1",
+									"parry": "No",
+									"block": "No",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Brawling",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Karate",
+											"modifier": -2
+										}
+									],
+									"calc": {
+										"parry": "No",
+										"block": "No",
+										"damage": "thr (+1 per die) cr"
+									}
+								}
+							],
+							"features": [
+								{
+									"type": "dr_bonus",
+									"location": "foot",
+									"amount": 1
+								}
+							],
+							"calc": {
+								"points": 3
+							}
+						},
+						{
+							"id": "8cbb48c0-1dc9-49fa-ac6c-ebf1b467b494",
+							"type": "trait",
+							"name": "Extra Arm (mouth)",
+							"reference": "B53",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "13198544-febf-4ae9-b33d-f0417afaa8ad",
+									"type": "modifier",
+									"name": "Extra-Flexible",
+									"reference": "B53",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "70739720-74b2-4e87-af50-d32c92418aa5",
+									"type": "modifier",
+									"name": "Long",
+									"reference": "B53",
+									"cost": 100,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "9933554a-070a-46be-9ab5-a1dd60a06c7b",
+									"type": "modifier",
+									"name": "Foot Manipulators",
+									"reference": "B53",
+									"cost": -30,
+									"disabled": true
+								},
+								{
+									"id": "ef88aab6-d563-4340-8b3e-c0fefd64af62",
+									"type": "modifier",
+									"name": "No Physical Attack",
+									"reference": "B53",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "4a771fbc-91c8-45df-8300-0e1319aa352a",
+									"type": "modifier",
+									"name": "Short",
+									"reference": "B53",
+									"cost": -50
+								},
+								{
+									"id": "dc2c7bf6-b170-41f2-8666-5bab7bcbf3ab",
+									"type": "modifier",
+									"name": "Weak",
+									"reference": "B53",
+									"notes": "Half body ST",
+									"cost": -25
+								},
+								{
+									"id": "5e09b98e-fc5e-45fa-adc5-2991f8945c5d",
+									"type": "modifier",
+									"name": "Weak",
+									"reference": "B53",
+									"notes": "Quarter body ST",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "ab130779-4e57-4341-9ae8-ad464f1605d5",
+									"type": "modifier",
+									"name": "Weapon Mount",
+									"reference": "B53",
+									"cost": -80,
+									"disabled": true
+								},
+								{
+									"id": "b30344f6-89d0-49e2-b9de-b09aada3b545",
+									"type": "modifier",
+									"name": "No Grasping Hand",
+									"reference": "MATG28",
+									"cost": -40,
+									"disabled": true
+								}
+							],
+							"levels": 1,
+							"points_per_level": 10,
+							"calc": {
+								"points": 3
+							}
+						},
+						{
+							"id": "064ae22b-f81e-4bbd-aba0-c619f7078537",
+							"type": "trait",
+							"name": "Fur",
+							"reference": "B101",
+							"tags": [
+								"Exotic",
+								"Perk",
+								"Physical"
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "8f8829e5-e268-4071-a782-e82e988461a7",
+							"type": "trait",
+							"name": "Horizontal",
+							"reference": "B139",
+							"tags": [
+								"Disadvantage",
+								"Exotic",
+								"Physical"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "1755317e-3c16-46f6-a25c-f1b693ca1e85",
+							"type": "trait",
+							"name": "Extra Arm (Hooves)",
+							"reference": "B53",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "bbdae4b5-e384-41b9-a638-1fe6140eb7ad",
+									"type": "modifier",
+									"name": "Extra-Flexible",
+									"reference": "B53",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "45377004-cd2f-4f93-85ed-b9718ed38f32",
+									"type": "modifier",
+									"name": "Long",
+									"reference": "B53",
+									"cost": 100,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "876532ab-69e6-4d98-b33a-5ccd91201d1b",
+									"type": "modifier",
+									"name": "Foot Manipulators",
+									"reference": "B53",
+									"cost": -30
+								},
+								{
+									"id": "8b33e458-90b8-40b2-8f73-e3d4fa547436",
+									"type": "modifier",
+									"name": "No Physical Attack",
+									"reference": "B53",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "d69d90d5-65f6-4315-bb5e-5de74181ac70",
+									"type": "modifier",
+									"name": "Short",
+									"reference": "B53",
+									"cost": -50
+								},
+								{
+									"id": "d6fda8f5-1c50-4b9a-bfc8-c08fec321c08",
+									"type": "modifier",
+									"name": "Weak",
+									"reference": "B53",
+									"notes": "Half body ST",
+									"cost": -25,
+									"disabled": true
+								},
+								{
+									"id": "511beec0-33a2-4851-abbe-fa22f8254f99",
+									"type": "modifier",
+									"name": "Weak",
+									"reference": "B53",
+									"notes": "Quarter body ST",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "b14b81c2-c364-41b0-81c5-e2ee38fbaac8",
+									"type": "modifier",
+									"name": "Weapon Mount",
+									"reference": "B53",
+									"cost": -80,
+									"disabled": true
+								},
+								{
+									"id": "2ef10269-5e30-4500-8b60-ff4f0fc72d7f",
+									"type": "modifier",
+									"name": "No Grasping Hand",
+									"reference": "MATG28",
+									"cost": -40,
+									"disabled": true
+								}
+							],
+							"levels": 2,
+							"points_per_level": 10,
+							"calc": {
+								"points": 4
+							}
+						},
+						{
+							"id": "f9e7662a-372f-4894-ac8f-97cc79cd25ae",
+							"type": "trait",
+							"name": "Ham-Fisted",
+							"reference": "B138",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"levels": 4,
+							"points_per_level": -5,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "high manual dexterity"
+										}
+									}
+								]
+							},
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "contains",
+										"qualifier": "artist"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "jeweler"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "knot-tying"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "leatherworking"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "lockpicking"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "pickpocket"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "sewing"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "sleight of hand"
+									},
+									"amount": -3,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "surgery"
+									},
+									"amount": -3
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "machinist"
+									},
+									"amount": -3
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "contains",
+										"qualifier": "mechanic"
+									},
+									"amount": -3
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "contains",
+										"qualifier": "fast-draw"
+									},
+									"amount": -3
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from others where being tidy or well-groomed would matter",
+									"amount": -1,
+									"per_level": true
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "to any Influence roll where being tidy or well-groomed would matter",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"calc": {
+								"points": -20
+							}
+						},
+						{
+							"id": "7aa0cd93-fc72-419d-ba27-c95f05e1a488",
+							"type": "trait",
+							"name": "Distinctive Features",
+							"reference": "B165",
+							"tags": [
+								"Physical",
+								"Quirk"
+							],
+							"base_points": -1,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "disguise"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "shadowing"
+									},
+									"amount": -1
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "to others’ attempts to identify or follow you",
+									"amount": 1
+								}
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"name": "Base Pony",
+					"calc": {
+						"points": 2
+					}
+				}
+			],
+			"name": "Dark Pegasus Pony",
+			"calc": {
+				"points": 64
+			}
+		}
+	]
+}

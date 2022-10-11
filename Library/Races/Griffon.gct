@@ -1,0 +1,843 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "3c4ec709-3bed-4cfe-aa6d-ee2633014247",
+	"traits": [
+		{
+			"id": "9a991c9c-bdba-46ac-9c69-a676d30ecf4f",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "bd466f38-dd70-4795-b46e-725dc26896e0",
+					"type": "trait",
+					"name": "Acute Vision",
+					"reference": "B35",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 2,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "vision",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "2f4b3f6b-c351-44c6-9bc1-570fbb2b1feb",
+					"type": "trait",
+					"name": "Talons",
+					"reference": "B43",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 8,
+					"weapons": [
+						{
+							"id": "4ef3e921-504d-4564-b793-dd4cdf4fcb51",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cut",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Slash",
+							"reach": "C",
+							"parry": "0",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"parry": "0",
+								"block": "No",
+								"damage": "thr-1 cut"
+							}
+						},
+						{
+							"id": "f7ecdc36-9959-4bb3-bb66-0176dc15c9c6",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Stab",
+							"reach": "C",
+							"parry": "0",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"parry": "0",
+								"block": "No",
+								"damage": "thr-1 imp"
+							}
+						}
+					],
+					"calc": {
+						"points": 8
+					}
+				},
+				{
+					"id": "395ba0c4-f47a-4a52-adcf-da2c82cf8930",
+					"type": "trait",
+					"name": "Enhanced Move (Air)",
+					"reference": "B52,P49",
+					"notes": "Multiply normal Air Move by 1 + level",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "79398643-ba30-4f08-9b12-3405312a3683",
+							"type": "modifier",
+							"name": "Handling Bonus",
+							"reference": "B52",
+							"cost": 5,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "dabd68ec-58b3-401a-af89-de37b838c42c",
+							"type": "modifier",
+							"name": "Handling Penalty",
+							"reference": "B52",
+							"cost": -5,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "e316a3e2-cc8d-4b99-8cd0-bd01ccf20388",
+							"type": "modifier",
+							"name": "Newtonian",
+							"reference": "B52",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "e653e29f-bbea-4a68-8d44-9845da45fad9",
+							"type": "modifier",
+							"name": "Road-Bound",
+							"reference": "B52",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "c02f53b9-8918-478b-a962-3d1a8157f312",
+							"type": "modifier",
+							"name": "All-Out",
+							"reference": "P49",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "ca26e704-8033-4901-bb38-c0e0510ed357",
+							"type": "modifier",
+							"name": "Cosmic",
+							"reference": "SU26",
+							"notes": "Instantaneous Acceleration",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "fa245c74-9d18-4ca8-8c4e-024c63ccaac1",
+							"type": "modifier",
+							"name": "Cosmic",
+							"reference": "SU27",
+							"notes": "Complete Maneuverability",
+							"cost": 50,
+							"disabled": true
+						}
+					],
+					"levels": 1.5,
+					"points_per_level": 20,
+					"calc": {
+						"points": 30
+					}
+				},
+				{
+					"id": "b628407f-c253-4ce7-ba04-c2404f3ebe2a",
+					"type": "trait",
+					"name": "Extra Arm",
+					"reference": "B53",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "a4a4b3db-88eb-412b-8bee-74150d9f3040",
+							"type": "modifier",
+							"name": "Extra-Flexible",
+							"reference": "B53",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "942fdfcb-f239-4c40-9224-2e1507a43e60",
+							"type": "modifier",
+							"name": "Long",
+							"reference": "B53",
+							"cost": 100,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "3b1fbbca-405f-4592-b831-3ae68f98ee38",
+							"type": "modifier",
+							"name": "Foot Manipulators",
+							"reference": "B53",
+							"cost": -30,
+							"disabled": true
+						},
+						{
+							"id": "82659421-f2c1-4300-9119-c2406b9403fc",
+							"type": "modifier",
+							"name": "No Physical Attack",
+							"reference": "B53",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "c6ffffa4-1d92-4c7d-9aac-2097aa9a944e",
+							"type": "modifier",
+							"name": "Short",
+							"reference": "B53",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "3d074340-af06-4b70-aa84-22da87bb081d",
+							"type": "modifier",
+							"name": "Weak",
+							"reference": "B53",
+							"notes": "Half body ST",
+							"cost": -25,
+							"disabled": true
+						},
+						{
+							"id": "b2cccad5-b178-43ec-afc4-eae1c478a0cc",
+							"type": "modifier",
+							"name": "Weak",
+							"reference": "B53",
+							"notes": "Quarter body ST",
+							"cost": -50
+						},
+						{
+							"id": "9c654aa3-228f-4f8b-9f0f-58672c44ea9a",
+							"type": "modifier",
+							"name": "Weapon Mount",
+							"reference": "B53",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "e6cb0172-3f80-40db-a521-1c88f00105f6",
+							"type": "modifier",
+							"name": "No Grasping Hand",
+							"reference": "MATG28",
+							"cost": -40,
+							"disabled": true
+						}
+					],
+					"levels": 2,
+					"points_per_level": 10,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "654fec2b-e44c-4363-9e47-2a2d753f3600",
+					"type": "trait",
+					"name": "Fit",
+					"reference": "B55",
+					"notes": "Recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to all HT rolls to stay conscious, avoid death, resist disease, or resist poison",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "f1119687-8407-41df-8708-faa01773439d",
+					"type": "trait",
+					"name": "Flight",
+					"reference": "B56,P50,PSI14",
+					"notes": "Air Move is Basic Speed x 2 (drop all fractions)",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "6ad7ecc5-8832-4a9c-82b4-85254a94daf5",
+							"type": "modifier",
+							"name": "Newtonian Space Flight",
+							"reference": "B56",
+							"cost": 25,
+							"disabled": true
+						},
+						{
+							"id": "48fd82c3-d8f0-4be7-a69b-1d5c7897f608",
+							"type": "modifier",
+							"name": "Space Flight",
+							"reference": "B56",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "b53b501f-2ecc-4c99-8766-5766e670ce73",
+							"type": "modifier",
+							"name": "Cannot Hover",
+							"reference": "B56",
+							"cost": -15,
+							"disabled": true
+						},
+						{
+							"id": "6c2b8127-d1d7-4201-bfb4-8fdb13f344e6",
+							"type": "modifier",
+							"name": "Controlled Gliding",
+							"reference": "B56",
+							"cost": -45,
+							"disabled": true
+						},
+						{
+							"id": "0c826766-8e63-4205-aa62-db6598e2b4f0",
+							"type": "modifier",
+							"name": "Gliding",
+							"reference": "B56",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "19cb7f15-94dc-4622-b798-4eb2d8dd1668",
+							"type": "modifier",
+							"name": "Lighter Than Air",
+							"reference": "B56",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "b924f3a8-46a9-41ca-93ee-8c6980e1624f",
+							"type": "modifier",
+							"name": "Low Ceiling",
+							"reference": "B56",
+							"notes": "30'",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "3fdb4313-9cea-4ecd-915e-82a3d9208033",
+							"type": "modifier",
+							"name": "Low Ceiling",
+							"reference": "B56",
+							"notes": "10'",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "033099c0-2248-40a9-bc8a-d505297693e8",
+							"type": "modifier",
+							"name": "Low Ceiling",
+							"reference": "B56",
+							"notes": "5'",
+							"cost": -25,
+							"disabled": true
+						},
+						{
+							"id": "eedf31a5-c7ad-4967-9c43-ec1cc31f3680",
+							"type": "modifier",
+							"name": "Small Wings",
+							"reference": "B56",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "3c786352-fa26-4862-8b6a-6cfef78a995c",
+							"type": "modifier",
+							"name": "Space Flight Only",
+							"reference": "B56",
+							"cost": -75,
+							"disabled": true
+						},
+						{
+							"id": "ef21e56c-ec8d-4d9f-9643-c5ff26f41ad7",
+							"type": "modifier",
+							"name": "Winged",
+							"reference": "B56",
+							"cost": -25
+						},
+						{
+							"id": "6551975e-39ce-4013-bf89-1eda2fd4f32e",
+							"type": "modifier",
+							"name": "Planetary",
+							"reference": "P50",
+							"cost": -5,
+							"disabled": true
+						},
+						{
+							"id": "0151bb33-5645-42aa-afbe-414074cceffb",
+							"type": "modifier",
+							"name": "Requires Surface",
+							"reference": "P50",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "af1cb269-ac6e-4b29-9173-99380703cbf7",
+							"type": "modifier",
+							"name": "Slow",
+							"reference": "PSI14",
+							"notes": "Basic Speed",
+							"cost": -25,
+							"disabled": true
+						},
+						{
+							"id": "ecf503cc-493c-4d8a-a0d9-7aa0b79c2bd2",
+							"type": "modifier",
+							"name": "Slow, Move 1",
+							"reference": "PSI14",
+							"cost": -45,
+							"disabled": true
+						}
+					],
+					"base_points": 40,
+					"calc": {
+						"points": 30
+					}
+				},
+				{
+					"id": "076046f1-ba89-4e38-8759-c1aaac1ed26a",
+					"type": "trait",
+					"name": "Sharp Beak",
+					"reference": "B91",
+					"tags": [
+						"Exotic",
+						"Perk",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "bd3971dd-9552-493f-9d82-bd79bace3494",
+							"type": "modifier",
+							"name": "Provided by Vampiric Bite",
+							"reference": "B96",
+							"cost": -1,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"base_points": 1,
+					"weapons": [
+						{
+							"id": "28e498e7-d203-4912-9c1e-fbe4d0fb71de",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "pi+",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Peck",
+							"reach": "C",
+							"parry": "No",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"parry": "No",
+								"block": "No",
+								"damage": "thr-1 pi+"
+							}
+						}
+					],
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "500cda0b-108b-4ee9-8077-c0037eada20f",
+					"type": "trait",
+					"name": "Temperature Tolerance",
+					"reference": "B93",
+					"notes": "-55°F - 70°F / -48°C - 21°C",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 5,
+					"points_per_level": 1,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "a165fe24-ad32-41da-9514-c0ab5827187d",
+					"type": "trait",
+					"name": "Walk On Air",
+					"reference": "B97,P87",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "85643dea-ea4b-4279-a9e2-0d8046965699",
+							"type": "modifier",
+							"name": "Specific",
+							"reference": "P87",
+							"notes": "Clouds",
+							"cost": -40
+						},
+						{
+							"id": "729023e1-4a16-410c-b6a8-d7607ddf6058",
+							"type": "modifier",
+							"name": "Lighter than Air",
+							"reference": "P87",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "33864f57-2bde-4629-8c1c-dbdc41abc4c0",
+							"type": "modifier",
+							"name": "Maximum Height",
+							"reference": "P87",
+							"notes": "30 ft",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "963a9505-1fdb-44f2-aaeb-a460b34599a1",
+							"type": "modifier",
+							"name": "Maximum Height",
+							"reference": "P87",
+							"notes": "10 ft",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "06c26894-41ba-4fb6-932c-24b438647ca0",
+							"type": "modifier",
+							"name": "Maximum Height",
+							"reference": "P87",
+							"notes": "5 ft",
+							"cost": -25,
+							"disabled": true
+						},
+						{
+							"id": "2c10462a-cd48-4bdd-83b7-5a1bed727293",
+							"type": "modifier",
+							"name": "Vertical Only",
+							"reference": "P87",
+							"cost": -25,
+							"disabled": true
+						}
+					],
+					"base_points": 20,
+					"calc": {
+						"points": 12
+					}
+				},
+				{
+					"id": "b5280aa8-8482-4526-bb4b-fe7941d68d9f",
+					"type": "trait",
+					"name": "Striking ST",
+					"reference": "B88,P78",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "9b8e80e8-e2b2-459f-ab27-d96a9aa1e1ca",
+							"type": "modifier",
+							"name": "No Fine Manipulators",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "32892d90-82df-401d-bddc-d39a12d0f8b7",
+							"type": "modifier",
+							"name": "Size",
+							"cost": -10,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "eaabe509-f453-401a-89c1-4830111d0544",
+							"type": "modifier",
+							"name": "Super Effort",
+							"reference": "SU24",
+							"cost": 400,
+							"disabled": true
+						},
+						{
+							"id": "f35b516b-28d2-4935-8caa-e9f85f5310e0",
+							"type": "modifier",
+							"name": "One Attack Only",
+							"reference": "P79",
+							"notes": "@Attack@",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "4c469f7d-a2fc-45fa-9b19-a51985d575cd",
+							"type": "modifier",
+							"name": "Know Your Own Strength Pricing Variant",
+							"reference": "PY83:18",
+							"cost": -4,
+							"affects": "levels_only",
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"levels": 2,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"limitation": "striking_only",
+							"attribute": "st",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "81958e9b-68d4-4f06-a744-73050f8e3be8",
+					"type": "trait",
+					"name": "Horizontal",
+					"reference": "B139",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Physical"
+					],
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "0122fdd4-5c7e-466c-8908-377a3b86c5f6",
+					"type": "trait",
+					"name": "Sleepy",
+					"reference": "B154",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "2fa70365-917b-4f62-9ce4-eadc0e682e9e",
+							"type": "modifier",
+							"name": "1/2 time",
+							"reference": "B154",
+							"cost": -8,
+							"cost_type": "points"
+						},
+						{
+							"id": "5e4d53cd-724d-4655-9ed5-4a60de8f569b",
+							"type": "modifier",
+							"name": "2/3 time",
+							"reference": "B154",
+							"cost": -16,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "9c1e019f-ce74-4ddd-94ed-6e46025cd115",
+							"type": "modifier",
+							"name": "3/4 time",
+							"reference": "B154",
+							"cost": -20,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "e34f26b4-a63f-4ce6-886b-f2f323a7a23c",
+							"type": "modifier",
+							"name": "7/8 time",
+							"reference": "B154",
+							"cost": -26,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -8
+					}
+				},
+				{
+					"id": "a1b3802f-82be-4454-9466-6d45a25c89b0",
+					"type": "trait",
+					"name": "No Peripheral Vision",
+					"reference": "B151",
+					"notes": "Your arc of vision is a 120° wedge to the front. On a map, your “left” and “right” hexes become “back” hexes – that is, you have three “back” hexes, and get no defense against attacks originating from these hexes!",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					}
+				},
+				{
+					"id": "06036122-5aa7-44fb-acd5-2bdff89c2646",
+					"type": "trait",
+					"name": "Vulnerability",
+					"reference": "B161",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "da840630-abbc-426e-a9e3-f7cd34ab0956",
+							"type": "modifier",
+							"name": "@Rare attack@",
+							"reference": "B161",
+							"cost": -5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "c4f25bac-aec3-430a-b8e2-c5cc8ca62d3d",
+							"type": "modifier",
+							"name": "Crushing",
+							"reference": "B161",
+							"cost": -10,
+							"cost_type": "points"
+						},
+						{
+							"id": "b94356f2-bfcd-4b44-afcf-9491a86b2ff9",
+							"type": "modifier",
+							"name": "@Common attack@",
+							"reference": "B161",
+							"cost": -15,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "c6e65360-efaf-470b-8f12-7e1ae885cf7e",
+							"type": "modifier",
+							"name": "@Very common attack@",
+							"reference": "B161",
+							"cost": -20,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "47f0d0dd-e3de-4212-9348-f73dd42804c6",
+							"type": "modifier",
+							"name": "Wounding x2",
+							"reference": "B161",
+							"cost": 2,
+							"cost_type": "multiplier"
+						},
+						{
+							"id": "7e490fc9-227f-4cab-86b7-6570ed3ec050",
+							"type": "modifier",
+							"name": "Wounding x3",
+							"reference": "B161",
+							"cost": 3,
+							"cost_type": "multiplier",
+							"disabled": true
+						},
+						{
+							"id": "bcb496da-fb92-4f4a-a8bc-ade01ceacaa0",
+							"type": "modifier",
+							"name": "Wounding x4",
+							"reference": "B161",
+							"cost": 4,
+							"cost_type": "multiplier",
+							"disabled": true
+						},
+						{
+							"id": "bac139dd-b536-4d88-aafa-fa927c454816",
+							"type": "modifier",
+							"name": "Fatigue Only",
+							"reference": "B161",
+							"cost": -50,
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -20
+					}
+				}
+			],
+			"name": "Griffon",
+			"calc": {
+				"points": 62
+			}
+		}
+	]
+}

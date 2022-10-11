@@ -1,0 +1,263 @@
+{
+	"type": "trait_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "ed2ef25f-8a92-4680-9d5d-7d37fed63588",
+			"type": "trait",
+			"name": "Edge",
+			"notes": "A combination of unconscious skill and luck, allowing you to narrowly avoid a terrible fate once per combat. Corresponds to Edge in MegaMek. All players start with 1 Edge.\r",
+			"levels": 1,
+			"points_per_level": 10,
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "4250189b-f3ba-4969-a4a5-4f9fdc15bd2d",
+			"type": "trait",
+			"name": "All Weather",
+			"notes": "Does not suffer PSRs due to bad weather.",
+			"base_points": 15,
+			"calc": {
+				"points": 15
+			}
+		},
+		{
+			"id": "e4549672-822f-4510-94ed-84254115c4af",
+			"type": "trait",
+			"name": "Blind Fighter (Special)",
+			"notes": "Pilot does not suffer the initial -1 penalty due to low light. Granted by the Night Vision advantage or night vision equipment.\r",
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "507e3672-8825-4192-a9a7-333ee8e9747f",
+			"type": "trait",
+			"name": "Cluster Hitter",
+			"notes": "(Requires 2+ kills using cluster weapons against appropriate targets)\nThis advantage gives +1 to rolls on the cluster weapon hit table.\r",
+			"base_points": 10,
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "462b7fbb-eef8-4a06-9917-800733ddc43b",
+			"type": "trait",
+			"name": "Cluster Master",
+			"notes": "(Requires 10+ kills using cluster weapons against appropriate targets)\nThis advantage gives +2 to rolls on the cluster weapon hit table.\r",
+			"base_points": 20,
+			"calc": {
+				"points": 20
+			}
+		},
+		{
+			"id": "df5cedd4-bef0-4622-882c-09478728afac",
+			"type": "trait",
+			"name": "Sandblaster",
+			"notes": "(Requires Armoury (Weapon) at 14+, 15+ combat kills with the weapon on appropriate targets) A pilot with this ability gets a +4, +3, or +2 bonus on the cluster hit table at short, medium, and long range with one specific weapon type.\r",
+			"base_points": 20,
+			"calc": {
+				"points": 20
+			}
+		},
+		{
+			"id": "a2fb90dd-1716-4ee8-9964-9299f38f4af2",
+			"type": "trait",
+			"name": "Dodge",
+			"notes": "(Requires DX 11+)\nAllows the unit to make a dodge maneuver instead of a physical attack, adding +2 to the target numbers of incoming physical attacks.\r",
+			"base_points": 10,
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "d53ccca3-8d28-4105-8273-efedd2c8cbc6",
+			"type": "trait",
+			"name": "Eagle's Eyes",
+			"notes": "(Requires Perception (Vision) 15+) This pilot has exceptional vision, spotting hidden units and even minefields with ease. Allows the unit to act as a Beagle Active Probe or extend the range of an existing system.\r",
+			"base_points": 15,
+			"calc": {
+				"points": 15
+			}
+		},
+		{
+			"id": "733f56ee-d743-4e8c-af1b-285f347553e1",
+			"type": "trait",
+			"name": "Forward Observer (Special)",
+			"notes": "Improves the accuracy of this unit's artillery. Fire adjustment gets a -2 bonus instead of -1, and units spotting for this unit give an additional -1 on the to-hit for every point of Gunnery below 4. Granted to artillery units by specialized forward observer units.\r",
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "9539d043-ab98-4e52-850c-73c98538d53c",
+			"type": "trait",
+			"name": "Golden Goose",
+			"notes": "(Aero only; requires 20+ combat kills with ground attack)\nA pilot with this ability specializes in ground attack. His strafing runs are at -1 to-hit, and bombing runs at -2. Scatter distance reduced by 2.\r",
+			"base_points": 20,
+			"calc": {
+				"points": 20
+			}
+		},
+		{
+			"id": "a5ab953b-93bb-42ce-8fdb-659efdd9693a",
+			"type": "trait",
+			"name": "Hopping Jack",
+			"notes": "(Requires DX 12+ or Flight) \nNegates 2 points of movement penalty when using jump jets.\r",
+			"base_points": 30,
+			"calc": {
+				"points": 30
+			}
+		},
+		{
+			"id": "591206e2-ab34-40dd-8299-833a363dc060",
+			"type": "trait",
+			"name": "Hot Dog (Special)",
+			"notes": "Reduces the target number for heat-related rolls (shutdown, ammo explosion) by 1. Granted by expensive heat-resistant components used in construction or upgrading of a 'mech.\r",
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "0d6b0ad9-2cc6-4506-9b3a-d57a0042c139",
+			"type": "trait",
+			"name": "Iron Man",
+			"notes": "(Requires HT 10+) A pilot with this skill takes only 1 pilot hit from ammo explosions. Can be granted by special measures taken to reduce ammunition explosions (proto-CASE).\r",
+			"base_points": 5,
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "ee215cda-3ab5-42a4-a248-c73b61744121",
+			"type": "trait",
+			"name": "Pain Resistance (Special)",
+			"notes": "The pilot gets a +1 bonus on rolls to remain conscious, and takes only 1 pilot hit from ammo explosions. Granted by the High Pain Threshhold advantage.\r",
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "86ed6a3b-8cf4-452f-8202-a1471508e06f",
+			"type": "trait",
+			"name": "Maneuvering Ace",
+			"notes": "Enables a mech to move laterally like a quad. Quads move laterally for 1 less MP. Aero pilots can perform maneuvers for 1 less thrust. Reduces the target number of sideslipping, skidding, and going out of control by 1.\r",
+			"base_points": 15,
+			"calc": {
+				"points": 15
+			}
+		},
+		{
+			"id": "1835294d-b7b0-46da-94ea-64a6071c07ef",
+			"type": "trait",
+			"name": "Melee Specialist",
+			"notes": "(Requires a melee skill of 15+ and 3+ melee kills against appropriate targets)\nAllows a battlemech to do one extra damage on successful physical attacks, and reduces their target number by 1.\r",
+			"base_points": 15,
+			"calc": {
+				"points": 15
+			}
+		},
+		{
+			"id": "53aabe2a-2624-4006-ba76-9d69b81773e0",
+			"type": "trait",
+			"name": "Melee Master",
+			"notes": "(Requires a melee skill of 18+ and 15+ melee kills against appropriate targets) Allows a battlemech to do one additional punch, kick or club attack on the same opponent. \r",
+			"base_points": 30,
+			"calc": {
+				"points": 30
+			}
+		},
+		{
+			"id": "033ec5e1-9aea-45ed-96a0-a74bc4880779",
+			"type": "trait",
+			"name": "Multi-Tasker",
+			"notes": "(Requires IQ 11+) Secondary target modifiers are reduced by 1. Can be granted by special circumstances (crew with multiple gunners, expensive upgrade to a combat computer)\r",
+			"base_points": 10,
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "54033375-a3cb-4749-b103-6b543cdc860f",
+			"type": "trait",
+			"name": "Oblique Artilleryman",
+			"notes": "(Requires IQ 11+ and 10+ combat artillery kills) Reduces this unit's artillery or bomb scatter distance by 2 hexes.\r",
+			"base_points": 15,
+			"calc": {
+				"points": 15
+			}
+		},
+		{
+			"id": "0fcdac9f-04d0-48e2-b739-8813b100efec",
+			"type": "trait",
+			"name": "Oblique Attacker",
+			"notes": "(Requires IQ 11+) The penalty for indirect fire is reduced by 1. Can be granted by an expensive upgrade to a targeting computer.\r",
+			"base_points": 15,
+			"calc": {
+				"points": 15
+			}
+		},
+		{
+			"id": "2194fe80-d7be-46c3-a0f2-90258e4fcdfa",
+			"type": "trait",
+			"name": "Sensor Geek",
+			"notes": "(Requires IQ 11+, requires skill 15+ {Electronics Operations: Sensors}) Gives a +2 bonus to sensor rolls, allowing larger sensor radius.\r",
+			"base_points": 10,
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "3ad19a02-11cf-4494-adb1-3b238d9b4a5a",
+			"type": "trait",
+			"name": "Shaky Stick",
+			"notes": "(Aero only; requires DX 11+) This pilot excels at making himself a difficult target for anti-air units. Attacking ground units gain a +1 to-hit penalty.\r",
+			"base_points": 15,
+			"calc": {
+				"points": 15
+			}
+		},
+		{
+			"id": "76c3ee75-a367-4c93-a72f-620d65ba7d81",
+			"type": "trait",
+			"name": "Sniper",
+			"notes": "(Requires DX 12+ and Perception (Vision) 15+) \nPenalties for shooting at range are halved.\r",
+			"base_points": 30,
+			"calc": {
+				"points": 30
+			}
+		},
+		{
+			"id": "f80f1032-3761-4c91-888f-01ee61f3bf19",
+			"type": "trait",
+			"name": "Some like it Hot",
+			"notes": "(Requires HT 11+) A pilot with this ability reduces the penalty on target numbers and MP due to heat by 1. Can also be granted by a high-quality cooling vest.\r",
+			"base_points": 10,
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "fff0d754-6b16-492b-9389-3da61f3b260a",
+			"type": "trait",
+			"name": "Weapon Specialization",
+			"notes": "(Requires Armoury (Weapon) at 16+, 20+ combat kills with the weapon on appropriate targets) \nReduces the target number of attacks with a specific weapon by 2.\r",
+			"base_points": 30,
+			"calc": {
+				"points": 30
+			}
+		},
+		{
+			"id": "3a0fa291-60d0-4b8e-af10-bf985adb1492",
+			"type": "trait",
+			"name": "Weathered",
+			"notes": "A pilot with this ability reduces the penalties on to-hit numbers due to foul weather by 1.\r",
+			"base_points": 10,
+			"calc": {
+				"points": 10
+			}
+		}
+	]
+}

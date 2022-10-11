@@ -1,0 +1,326 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "d8e43708-7722-48b1-9faf-013ed01690f2",
+	"traits": [
+		{
+			"id": "ae0e224f-25d2-4c9c-9d8f-6f013c9a315f",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "1915faf0-1ecc-4b57-bc8a-d1efdbedb3b2",
+					"type": "trait",
+					"name": "Size Modifier 0 or 1",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "2e19561a-cba5-485b-afbc-110418da4484",
+					"type": "trait",
+					"name": "Acute Taste \u0026 Smell",
+					"reference": "B35",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 2,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "taste_smell",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "ecc31c6b-c450-4a83-99c1-5d8f07c79bc5",
+					"type": "trait",
+					"name": "Acute Hearing",
+					"reference": "B35",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 2,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "hearing",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "6e3c8181-f991-4202-843d-f2ad6edaeb9b",
+					"type": "trait",
+					"name": "Blunt Claws",
+					"reference": "B42,MA42",
+					"notes": "(Dog) +1 per die to the damage you inflict with a punch or kick.",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 3,
+					"weapons": [
+						{
+							"id": "8885338b-eb06-4130-88d7-ffcfaead5b85",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1",
+								"modifier_per_die": 1
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"parry": "0",
+								"block": "No",
+								"damage": "thr-1 (+1 per die) cr"
+							}
+						},
+						{
+							"id": "76e22d4c-6a5a-43dc-a934-52969c134f8b",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"modifier_per_die": 1
+							},
+							"usage": "Kick",
+							"reach": "C,1",
+							"parry": "No",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Karate",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"parry": "No",
+								"block": "No",
+								"damage": "thr (+1 per die) cr"
+							}
+						}
+					],
+					"calc": {
+						"points": 3
+					}
+				},
+				{
+					"id": "61d28e07-2b67-47f4-9e33-b75eca602b2e",
+					"type": "trait",
+					"name": "Discriminatory Smell",
+					"reference": "B49,P47",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "17ab7dd3-7774-4c6f-b4b8-f4e209866f47",
+							"type": "modifier",
+							"name": "Emotion Sense",
+							"reference": "B49",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "5b99c3b7-6e6e-44a5-b0e5-e7738f4a1ede",
+							"type": "modifier",
+							"name": "Profiling",
+							"reference": "P47",
+							"cost": 50,
+							"disabled": true
+						}
+					],
+					"base_points": 15,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "2cb368e9-b3a3-4435-9934-353902b28338",
+					"type": "trait",
+					"name": "Striking ST",
+					"reference": "B88,P78",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "9b8e80e8-e2b2-459f-ab27-d96a9aa1e1ca",
+							"type": "modifier",
+							"name": "No Fine Manipulators",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "32892d90-82df-401d-bddc-d39a12d0f8b7",
+							"type": "modifier",
+							"name": "Size",
+							"cost": -10,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "eaabe509-f453-401a-89c1-4830111d0544",
+							"type": "modifier",
+							"name": "Super Effort",
+							"reference": "SU24",
+							"cost": 400,
+							"disabled": true
+						},
+						{
+							"id": "f35b516b-28d2-4935-8caa-e9f85f5310e0",
+							"type": "modifier",
+							"name": "One Attack Only",
+							"reference": "P79",
+							"notes": "@Attack@",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "4c469f7d-a2fc-45fa-9b19-a51985d575cd",
+							"type": "modifier",
+							"name": "Know Your Own Strength Pricing Variant",
+							"reference": "PY83:18",
+							"cost": -4,
+							"affects": "levels_only",
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"levels": 1,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"limitation": "striking_only",
+							"attribute": "st",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "6f21cb03-472f-467a-a6fe-c909ec969ce5",
+					"type": "trait",
+					"name": "Tunneling (@Tunnel Move@)",
+					"reference": "B94,P85",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "c3853e67-58a3-4e2d-ad28-f4124fd87190",
+							"type": "modifier",
+							"name": "Hands Free",
+							"reference": "P86",
+							"cost": 20,
+							"disabled": true
+						}
+					],
+					"base_points": 30,
+					"levels": 1,
+					"points_per_level": 5,
+					"calc": {
+						"points": 35
+					}
+				},
+				{
+					"id": "a2ae086e-62a9-4a7d-9bcc-19592f84b4a4",
+					"type": "trait",
+					"name": "Fur",
+					"reference": "B101",
+					"tags": [
+						"Exotic",
+						"Perk",
+						"Physical"
+					],
+					"base_points": 1,
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "220ba04f-c63b-4a43-96bb-7160224fd662",
+					"type": "trait",
+					"name": "Semi-Upright",
+					"reference": "B153",
+					"notes": "Moving while upright reduces Move by 40%",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Physical"
+					],
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					}
+				}
+			],
+			"name": "Diamond Dog",
+			"calc": {
+				"points": 62
+			}
+		}
+	],
+	"notes": [
+		{
+			"id": "8bd5e79f-9a2c-4eae-8bcd-f5abd4f21a73",
+			"type": "note",
+			"text": "Size Modifier 0 or +1"
+		}
+	]
+}
